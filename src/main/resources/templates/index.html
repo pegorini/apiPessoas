@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de pessoas</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2 py-5">
+            <div class="alert alert-success" id="sucesso" style="display:none" role="alert">
+                Cadastro realizado com sucesso!
+            </div>
+            <div class="alert alert-danger" id="erro" style="display:none" role="alert">
+                Ocorreu um erro ao tentar cadastrar uma pessoa
+            </div>
+    <div class="col-12 bd-content" role="main">
+        <h1 class="bd-title" id="content">Cadastro de pessoas</h1>
+        <form id="CadastraPessoas" >
+            <div class="form-row">
+                <div class="col-md-7 mb-3">
+                    <label for="validationDefault01">Nome</label>
+                    <input type="text" class="form-control"  name="nome" id="validationDefault01" placeholder="Nome" value="" required>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <label for="validationDefault05">CPF</label>
+                    <input type="text"  name="cpf"
+                           pattern="\d{3}\d{3}\d{3}\d{2}"
+                           title="Digite o CPF no formato 00000000000" class="form-control" id="validationDefault05" placeholder="CPF" required>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault03">Data Nascimento</label>
+                    <input type="date"  data-date-format="DD MMMM YYYY" name="dataNascimento" class="form-control" id="validationDefault06" placeholder="Dara" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault04">E-mail</label>
+                    <input name="email"   type="email" class="form-control" id="validationDefault07" placeholder="E-mail" >
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Naturalidade</label>
+                    <input name="naturalidade" type="text" class="form-control" id="validationDefault03" placeholder="Naturalidade" >
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault04">Nacionalidade</label>
+                    <input name="nacionalidade"  type="text" class="form-control" id="validationDefault04" placeholder="Nacionalidade" >
+                </div>
+                <div class="col-md-1 mb-3">
+                    <label for="validationDefault04">Sexo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="inlineRadio1" value="Masculino">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="inlineRadio2" value="Feminino">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary"  type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="/valida.js"></script>
+</body>
+</html>

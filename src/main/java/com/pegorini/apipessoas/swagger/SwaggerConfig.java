@@ -21,7 +21,7 @@ public class SwaggerConfig {
 
         docket
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.testesoftplan.apipessoas"))
+                .apis(RequestHandlerSelectors.basePackage("com.pegorini.apipessoas"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(this.informacoesApi().build());

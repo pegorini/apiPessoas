@@ -8,11 +8,11 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.testesoftplan</groupId>
+	<groupId>com.pegorini.apipessoas</groupId>
 	<artifactId>api-pessoas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-pessoas</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Projeto cadastro de pessoas</description>
 
 	<properties>
 		<java.version>1.8</java.version>

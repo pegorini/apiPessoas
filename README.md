@@ -10,7 +10,7 @@
 ### Autorização basic:
  - Deve ser realizada utilizando o usuário admin e senha admin.
 
-### Usage exampleImagem docker hub:
+### Imagem docker hub:
   - docker pull pegorini/api-cadastro-pessoas:latest
 
 ### Rodando a aplicação com docker:

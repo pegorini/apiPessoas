@@ -14,7 +14,7 @@
   - docker pull pegorini/api-cadastro-pessoas:latest
 
 ### Rodando a aplicação com docker:
-   - docker run -it -p 8080:80 pegorini/api-cadastro-pessoas:latest
+   - docker run -it -p 8080:8080 pegorini/api-cadastro-pessoas:latest
 
 
 ### Documentação da api utilizando swagger:

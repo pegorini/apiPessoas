@@ -6,7 +6,8 @@
 ### O projeto está hospedado na nuvem utilizando a plataforma heroku:
  - https://pegorini-api.herokuapp.com/
  
- 
+### Front Angular ####
+ - Executar npm start para subir o ambiente
 ### Autorização basic:
  - Deve ser realizada utilizando o usuário admin e senha admin.
 

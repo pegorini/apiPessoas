@@ -11,9 +11,9 @@ import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.*;
 
-
+@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
 @RestController
-@RequestMapping("/pessoas")
+@RequestMapping("/api/pessoas")
 public class PessoaController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class PessoaController {
 
         if (validaCpf != null) {
             Map response = new HashMap();
-            response.put("Erro","CPF já cadastrado na base");
+            response.put("message","CPF já cadastrado na base");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
         }
         Pessoa pessoacadastrada = pessoaRepository.save(pessoa);

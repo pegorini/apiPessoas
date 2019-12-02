@@ -7,7 +7,9 @@
  - https://pegorini-api.herokuapp.com/
  
 ### Front Angular ####
- - Executar npm start para subir o ambiente
+ - Executar npm install
+ - npm start
+ 
 ### Autorização basic:
  - Deve ser realizada utilizando o usuário admin e senha admin.
 

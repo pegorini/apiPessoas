@@ -3,9 +3,9 @@
 
 ## Como rodar o projeto
  
-### Front Angular ####
- - Executar npm install
- - npm start
+### Front Angular  ####
+ - Executar npm install na pasta frontapipessoas
+ - npm start na pasta frontapipessoas
  
 ### Autorização basic:
  - Deve ser realizada utilizando o usuário admin e senha admin.

@@ -10,15 +10,15 @@
 ### Autorização basic:
  - Deve ser realizada utilizando o usuário admin e senha admin.
 
-### Imagem docker hub:
+### Imagem docker hub API: 
   - docker pull pegorini/api-pessoas-app:latest
 
-### Rodando a aplicação com docker:
+### Rodando a API aplicação com docker:
    - docker run -it -p 8080:8080 pegorini/api-pessoas-app:latest
 
 
 ### Documentação da api utilizando swagger:
-  - https://pegorini-api.herokuapp.com/swagger-ui.html
+  - /swagger-ui.html
 
 
 
